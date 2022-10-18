@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: brown;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .title {
+        color: white;
+        font-size: x-large;
+      }
+      .title:hover {
+        color: gray;
+      }
+      .mainimages {
+        border-radius: 10px;
+      }
+      .listImages {
+        border-radius: 11px;
+        width: 80px;
+        background-color: brown;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6px;
+      }
+      .listgames{
+        border-radius: 10px;
+        width: 300px;
+        justify-content: space-between;
+      }
+      .subtitle{
+        margin-top: 30px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="title"><img src="images/textLogo.png" alt="" /></div>
+      <div><img class="mainimages" src="images/mainmain2.jpg" alt="" /></div>
+      <div class="row">
+        <div class="row">
+          <div><img class="listImages" src="images/list1.jpg" alt="" /></div>
+          <div>Angry Birds Friends</div>
+        </div>
+        <div class="row">
+          <div>
+            <img class="listImages" src="images/list2.jpg" alt="" />
+          </div>
+          <div>Angry Birds Journey</div>
+        </div>
+        <div class="row">
+          <div><img class="listImages" src="images/list3.jpeg" alt=""></div>
+          <div>Angry Birds Dream blast</div>
+        </div>
+      </div>
+      <div class="subtitle">
+        <div>All games</div>
+      </div>
+      <div>
+        <div class="row">
+            <div><img class="listgames" src="images/list3.jpeg" alt=""></div>
+            <div><img class="listgames" src="images/list2.jpg" alt=""></div>
+            <div><img class="listgames" src="images/list1.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

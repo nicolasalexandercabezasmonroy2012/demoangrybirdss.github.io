@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(images/backgroun02.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            justify-content: center;
+        }
+        .btn{
+            border-radius: 11px;
+            background-color: white;
+            border-color: black;
+            width: 110px;
+            height: 39px;
+        }
+    </style>
+    <script>
+var beginChange;
+var valueChange=true;
+function startChange(){
+    beginchange=setInterval(changeImages,7000);
+}
+function changeImages(){
+    var intro=document.getElementById('intro') 
+    if(valueChange){
+    intro.src='images/intro01.png'; 
+    document.body.style.backgroundImage='url(images/backgroun01.jpg) '
+}
+else{
+    intro.src='images/intro02.png'; 
+    document.body.style.backgroundImage='url(images/backgroun02.jpg) '
+}
+valueChange=!valueChange
+
+}
+function openGame(){
+    window.location='play.html';
+}
+    </script>
+</head>
+<body onload="startChange()">
+    <img id="intro" src="images/intro02.png" alt="">
+    <button onclick="openGame()" class="btn">play now</button>
+</body>
+</html>
